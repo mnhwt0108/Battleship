@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Battleship Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="mr-auto-container">
+            <div class="mr-auto div-title">
+                <a class="mr-auto-link">
+                    <img class="mr-auto-logo" src="./css/img/death-battle-seeklogo.com.svg" alt="avt">
+                </a>
+            </div>
+            <div class="mr-auto button div-randomize-btn"><button id="randomize-btn">Randomize</button></div>
+            <div class="mr-auto-level">
+                <div class="ml-auto button"><button id="easy-btn">Easy</button></div>
+                <div class="button"><button id="medium-btn">Medium</button></div>
+                <div class="mr-auto button"><button id="hard-btn">Hard</button></div>
+            </div>
+            <div class="ml-auto mr-auto button start_button" id="div-start"><button class="hidden" id="start-btn">Start!</p>
+        </div> 
+        </div>
+    </div>
+    <div class="game">
+        <!-- <p>Play a game of battleship against an enemy AI</p> -->
+        <div class="board-container">
+            <div class="panel hidden" id="player-panel">
+                <div id="player-ship-label-1">Carrier</div>
+                <div id="player-ship-count-1">[5]</div>
+                <div id="player-ship-label-2">Battleship</div>
+                <div id="player-ship-count-2">[4]</div>
+                <div id="player-ship-label-3">Destroyer</div>
+                <div id="player-ship-count-3">[3]</div>
+                <div id="player-ship-label-4">Submarine</div>
+                <div id="player-ship-count-4">[3]</div>
+                <div id="player-ship-label-5">Patrol Boat</div>
+                <div id="player-ship-count-5">[2]</div>
+            </div>
+            <div id="playerboard" class="board hidden"></div>
+            <div id="enemyboard" class="board hidden"></div>
+            <div class="panel hidden" id="ai-panel">
+                <div id="ai-ship-label-1">Carrier</div>
+                <div id="ai-ship-count-1">[5]</div>
+                <div id="ai-ship-label-2">Battleship</div>
+                <div id="ai-ship-count-2">[4]</div>
+                <div id="ai-ship-label-3">Destroyer</div>
+                <div id="ai-ship-count-3">[3]</div>
+                <div id="ai-ship-label-4">Submarine</div>
+                <div id="ai-ship-count-4">[3]</div>
+                <div id="ai-ship-label-5">Patrol Boat</div>
+                <div id="ai-ship-count-5">[2]</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-label hidden" id="player-footer">Player</div>
+        <div class="footer-label hidden" id="ai-footer">AI</div>
+    </div>
+
+    <script src="js/boardUtils.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

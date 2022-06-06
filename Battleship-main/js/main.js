@@ -14,7 +14,7 @@ function sleep(ms) {
 function resetPanelFooter() {
     for (let id of ['player-footer', 'ai-footer']) {
         let elem = document.getElementById(id);
-        elem.innerText = (id === 'player-footer') ? "Player" : "AI";
+        elem.innerText = (id === 'player-footer') ? "PLAYER" : "AI";
         elem.style.color = "";
     }
     for (let id of ['player-panel', 'ai-panel']) {
@@ -118,6 +118,8 @@ function initBoards() {
     }
 }
 
+    
+
 /* Render a map of cell states onto the document */
 function render(coordMap, renderShips=true, opaque=false) {
     for (let state of Object.keys(coordMap)) {
@@ -146,7 +148,7 @@ function displayWinner(winner, loser) {
     let winnerElem = document.getElementById(`${winner}-footer`);
     let loserElem = document.getElementById(`${loser}-footer`);
     loserElem.classList.add("hidden");
-    winnerElem.innerText += " Wins!";
+    winnerElem.innerText += " WINS!";
 
     winnerElem.style.color = (winner === "player") ? "green" : "red";
 }

@@ -1,2 +1,0 @@
-# Battleship
-DSA assignment
